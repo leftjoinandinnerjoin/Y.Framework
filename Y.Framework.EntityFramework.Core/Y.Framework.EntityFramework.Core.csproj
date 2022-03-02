@@ -1,24 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Version>5.0.0</Version>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Specification\" />
-    <Folder Include="Model\" />
-    <Folder Include="Repository\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Y.Framework.Extensions\Y.Framework.Extensions.csproj" />
-  </ItemGroup>
-
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>6.0.0</Version>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Specification\" />
+		<Folder Include="Model\" />
+		<Folder Include="Repository\" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Y.Framework.Extensions\Y.Framework.Extensions.csproj" />
+	</ItemGroup>
 </Project>

@@ -5,10 +5,10 @@ namespace Y.Framework.EntityFramework.Core.Specification;
 
 public class BaseSpecification<T>
 {
-    protected Expression<Func<T, bool>> Criteria { get; private set; } = x => true;
-    protected List<Expression<Func<T, object>>> Includes { get; } = new List<Expression<Func<T, object>>>();
-    protected List<string> IncludeStrings { get; } = new List<string>();
-    public List<OrderByList<T>> OrderByList { get; private set; } = new List<OrderByList<T>>();
+    protected internal Expression<Func<T, bool>> Criteria { get; private set; } = x => true;
+    protected internal List<Expression<Func<T, object>>> Includes { get; } = new();
+    protected internal List<string> IncludeStrings { get; } = new();
+    public List<OrderByList<T>> OrderByList { get; } = new();
     public void AddPredicate(Expression<Func<T, bool>> predicateExpression)
     {
         Criteria = Criteria.And(predicateExpression);
